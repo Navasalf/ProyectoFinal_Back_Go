@@ -22,10 +22,15 @@ Este proyecto utiliza varias bibliotecas externas. Puedes instalar estas depende
 bash
 
 go get -u github.com/gin-gonic/gin <!-- Gin framework -->
+
 go get -u github.com/gin-contrib/cors <!-- Gin middleware for CORS -->
+
 go get -u github.com/jinzhu/gorm <!-- ORM -->
+
 go get -u github.com/lib/pq <!--PostgreSQL driver -->
+
 go get -u golang.org/x/crypto/bcrypt <!-- Password hashing -->
+
 
 Ejecución de la aplicación
 
