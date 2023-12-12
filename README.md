@@ -12,7 +12,7 @@ Configuración de la base de datos
 Antes de ejecutar la aplicación, asegúrate de crear una base de datos en PostgreSQL y proporcionar las credenciales correctas en la función init del archivo main.go. Puedes ajustar la cadena de conexión en la siguiente línea:
 
 
-db, err = gorm.Open("postgres", "user=postgres password=Tu_Password_de_la_base_de_datos dbname=el_nombre_dela_basededatos port=5432 sslmode=disable")
+    db, err = gorm.Open("postgres", "user=postgres password=Tu_Password_de_la_base_de_datos dbname=el_nombre_dela_basededatos port=5432 sslmode=disable")
 
 Asegúrate de reemplazar user, password, dbname y otros parámetros según tu configuración de PostgreSQL.
 Instalación de dependencias
@@ -21,15 +21,11 @@ Este proyecto utiliza varias bibliotecas externas. Puedes instalar estas depende
 
 bash
 
-go get -u github.com/gin-gonic/gin <!-- Gin framework -->
-
-go get -u github.com/gin-contrib/cors <!-- Gin middleware for CORS -->
-
-go get -u github.com/jinzhu/gorm <!-- ORM -->
-
-go get -u github.com/lib/pq <!--PostgreSQL driver -->
-
-go get -u golang.org/x/crypto/bcrypt <!-- Password hashing -->
+    go get -u github.com/gin-gonic/gin <!-- Gin framework -->
+    go get -u github.com/gin-contrib/cors <!-- Gin middleware for CORS -->
+    go get -u github.com/jinzhu/gorm <!-- ORM -->
+    go get -u github.com/lib/pq <!--PostgreSQL driver -->
+    go get -u golang.org/x/crypto/bcrypt <!-- Password hashing -->
 
 
 Ejecución de la aplicación
@@ -38,9 +34,8 @@ Una vez que hayas configurado la base de datos y hayas instalado las dependencia
 
 bash
 
-go run main.go
-
-La aplicación se ejecutará en http://127.0.0.1:8080 y aceptará solicitudes desde http://127.0.0.1:5173 gracias a la configuración CORS.
+    go run main.go
+    La aplicación se ejecutará en http://127.0.0.1:8080 y aceptará solicitudes desde http://127.0.0.1:5173 gracias a la configuración CORS.
 
 Uso de la API
 
